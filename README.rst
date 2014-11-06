@@ -161,6 +161,49 @@ automatically fix anything:
 
 Choose from the list of available fixers:
 
+
+====================================    ========================================    ============
+Rule                                    Description                                 Group
+====================================    ========================================    ============
+psr-0                                   Classes must be in a path that              PSR-0
+                                        matches their namespace, be at least
+                                        one namespace deep, and the class name 
+                                        should match the file name.
+                                        
+encoding                                PHP code MUST use only UTF-8                PSR-1
+                                        without BOM (remove BOM).
+                                        
+short_tag                               PHP code must use the long                  PSR-1
+                                        <?php ?> tags or the short-echo <?= ?>
+                                        tags; it must not use the other tag
+                                        variations.
+
+braces                                  The body of each structure MUST             PSR-2
+                                        be enclosed by braces. Braces should be
+                                        properly placed. Body of braces should
+                                        be properly indented.
+
+elseif                                  The keyword elseif should be                PSR-2
+                                        used instead of else if so that all
+                                        control keywords looks like single
+                                        words.
+
+eof_ending                              A file must always end with an              PSR-2
+                                        empty line feed.
+
+function_call_space                     When making a method or                     PSR-2
+                                        function call, there MUST NOT be a
+                                        space between the method or function
+                                        name and the opening parenthesis.
+
+multiline_spaces_before_semicolon       Multi-line whitespace before                symfony
+                                        closing semicolon are prohibited.
+====================================    ========================================    ============
+
+
+
+
+
 * **psr0** [PSR-0] Classes must be in a path that
                matches their namespace, be at least
                one namespace deep, and the class name
@@ -296,9 +339,6 @@ Choose from the list of available fixers:
 
 * **yoda_conditions** [symfony] Comparisons should be done
                using Yoda conditions.
-
-* **align_double_arrow** [contrib] Align double arrow symbols in
-               consecutive lines.
 
 * **align_equals** [contrib] Align equals symbols in
                consecutive lines.
